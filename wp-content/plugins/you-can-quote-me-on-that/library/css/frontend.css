@@ -1,0 +1,125 @@
+
+.you-can-quote-me-on-that-container {
+	overflow-x: hidden;
+	overflow: hidden;
+    width: 100%;
+	position: relative;
+}
+
+#primary .you-can-quote-me-on-that-container,
+.content-area .you-can-quote-me-on-that-container {
+	margin-bottom: 1.5em;
+}
+
+.you-can-quote-me-on-that-container.loading {
+    overflow: hidden;
+    background: url(../images/loader.gif) center center no-repeat;
+}
+.you-can-quote-me-on-that-container.loading .you-can-quote-me-on-that { 
+    visibility: hidden;
+}
+.you-can-quote-me-on-that-container .you-can-quote-me-on-that { 
+    padding: 0;
+	margin: 0 !important;
+	list-style: none;
+	width: 100000px;
+}
+
+.you-can-quote-me-on-that-container .you-can-quote-me-on-that .slide {
+    float: left;
+    position: relative;
+	max-width: 100vw;
+	width: 100vw;
+	margin: 0;
+	/*font-size: 25px;*/
+	/*font-size: 24px;*/
+	/*font-size: 23px;*/
+	font-size: 21px;
+	text-align: center;
+}
+
+.you-can-quote-me-on-that-container .you-can-quote-me-on-that .slide .quote {
+	/*padding: 0.5em 0 1em 0;*/
+	padding: 0.5em 0 0.5em 0;
+	font-style: italic;
+	/*display: flex;*/
+	/*justify-content: center;*/
+	width: 100%;
+}
+
+.you-can-quote-me-on-that-container .you-can-quote-me-on-that .slide .name {
+	font-weight: 400;
+	font-size: 21px;
+	/*font-size: 19px;*/
+	/*font-style: italic;*/
+}
+
+.you-can-quote-me-on-that-container .you-can-quote-me-on-that .slide .credentials {
+	/*font-size: 17px;*/
+	font-size: 16px;
+	/*font-size: 15px;*/
+	/*font-size: 14px;*/
+	padding: 0.2em 0 0.1em 0;
+}
+
+/* Navigation buttons */
+
+.you-can-quote-me-on-that-container .controls-container {
+	position: relative;
+	display: block;
+	width: 100%;
+	text-align: center;
+	padding: 1.6em 0 0 0;
+}
+
+.you-can-quote-me-on-that-container .controls-container .controls {
+	position: relative;
+	height: 100%;
+	display: inline-block;
+}
+
+.you-can-quote-me-on-that-container .prev,
+.you-can-quote-me-on-that-container .next {
+	height: 42px;
+    width: 42px;
+	display: inline-block;
+	position: relative;
+    text-align: center;
+    cursor: pointer;
+    z-index: 9;
+	color: #FFFFFF;
+	
+	/* This prevents artifacts from being left on the screen when the buttons scale */
+	outline: 1px solid transparent;
+}
+
+.you-can-quote-me-on-that-container .ycqmot-fa {
+	font-size: 37px;
+	line-height: 40px;
+}
+
+.you-can-quote-me-on-that-container .prev {
+	margin-right: 1px;
+}
+.you-can-quote-me-on-that-container .next {
+	margin-left: 1px;
+}
+
+.you-can-quote-me-on-that-container .rollover {
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+    -webkit-transition: all 0.2s ease 0s;
+     -moz-transition: all 0.2s ease 0s;
+      -ms-transition: all 0.2s ease 0s;
+       -o-transition: all 0.2s ease 0s;
+          transition: all 0.2s ease 0s;
+}
+
+.you-can-quote-me-on-that-container .prev:hover .rollover,
+.you-can-quote-me-on-that-container .next:hover .rollover {
+	opacity: 1;
+}
